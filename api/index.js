@@ -23,7 +23,7 @@ app.post('/api', (req, res) => {
   };
   const resp = {
     data: data,
-    body: body
+    body: req.json()
   };
   
   res.send(resp);
