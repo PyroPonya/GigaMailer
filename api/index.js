@@ -15,13 +15,12 @@ app.get('/api/item/:slug', (req, res) => {
 
 app.post('/api', (req, res) => {
   // const { a, b, c } = JSON.parse(req.body);
-  const body = req.body;
+  const body = (req.body).json();
   const data = {
     a: 1,
     b: 2, 
     c: 3,
   }
-  res.send(body.json())
   res.send({ data, body });
 })
 
