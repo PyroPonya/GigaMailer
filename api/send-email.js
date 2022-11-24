@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-export default async (req, res) => {
+export default async function handler(req, res) {
   
   const { firstName, lastName, email, message } = JSON.parse(req.body);
   const baseMail = 'info@kosmospromedia.ru';
@@ -53,4 +53,6 @@ export default async (req, res) => {
       });
   });
   res.status(200).json({ status: "OK" });
+  const { body } = req;
+  return res.send(`Hello ${body.name}, you just parsed the request body!`);
 };
