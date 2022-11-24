@@ -20,8 +20,13 @@ app.post('/api', (req, res) => {
     a: 1,
     b: 2, 
     c: 3,
-  }
-  res.send('data: ', data, 'body :', body);
+  };
+  const resp = {
+    data: data,
+    body: body
+  };
+  
+  res.send(resp);
 })
 
 module.exports = app;
