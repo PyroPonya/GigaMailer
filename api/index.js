@@ -20,7 +20,7 @@ app.post('/api', (req, res) => {
   //   b: b, 
   //   c: c,
   // }
-  res.send(`i got ur data: ${req}`);
+  res.send(req);
 })
 
 module.exports = app;
