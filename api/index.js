@@ -21,7 +21,7 @@ app.post('/api', (req, res) => {
     b: 2, 
     c: 3,
   }
-  res.send({ data, body });
+  res.send('data: ', data, 'body :', body);
 })
 
 module.exports = app;
