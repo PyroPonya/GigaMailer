@@ -26,7 +26,7 @@ app.post('/api', (req, res) => {
   console.log(req.body);
   console.log(res);
   console.log('=============NE_ALLLO============');
-  res.send(shitload);
+  res.send('WHATAHELLDUHD');
 })
 
 module.exports = app;
