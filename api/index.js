@@ -14,13 +14,13 @@ app.get('/api/item/:slug', (req, res) => {
 });
 
 app.post('/api', (req, res) => {
-  const { a, b, c } = JSON.parse(req.body);
-  const data = {
-    a: a,
-    b: b, 
-    c: c,
-  }
-  res.end(`data: ${data}`);
+  // const { a, b, c } = JSON.parse(req.body);
+  // const data = {
+  //   a: a,
+  //   b: b, 
+  //   c: c,
+  // }
+  res.send(`i got ur data: ${req.body}`);
 })
 
 module.exports = app;
