@@ -1,5 +1,5 @@
-const app = require('express')();
-const { v4 } = require('uuid');
+// const app = require('express')();
+// const { v4 } = require('uuid');
 
 export default async function handler(req, res) {
   const { body } = req;
@@ -35,4 +35,4 @@ export default async function handler(req, res) {
 //   })
 // })
 
-module.exports = app;
+// module.exports = app;
