@@ -21,7 +21,7 @@ app.post('/api', (req, res) => {
     b: 2, 
     c: 3,
   }
-  res.json(req.body);
+  res.send(body.json())
   res.send({ data, body });
 })
 
