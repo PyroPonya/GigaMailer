@@ -14,20 +14,3 @@ app.get('/api/item/:slug', (req, res) => {
 });
 
 module.exports = app;
-
-// app.post('/api', (req, res) => {
-//   const { from, to, subject, text } = req.body;
-//   const mailData = {
-//     from: from,
-//     to: to,
-//     subject: subject,
-//     text: text,
-//   };
-
-//   transporter.sendMail(mailData, (error, info) => {
-//     if (error) {
-//       return console.log(error);
-//     }
-//     res.status(200).send({message: 'Mail send'});
-//   })
-// })
