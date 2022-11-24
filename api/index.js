@@ -21,10 +21,10 @@ app.post('/api', (req, res) => {
     b: 2, 
     c: 3,
   };
-  const resp = {
+  const resp = JSON.stringify({
     data: data,
     body: req
-  };
+  });
   
   res.send(resp);
 })
