@@ -21,9 +21,11 @@ app.post('/api', (req, res) => {
   //   b: b, 
   //   c: c,
   // }
+  console.log('=============ALLLO===============');
   console.log(req);
   console.log(req.body);
   console.log(res);
+  console.log('=============NE_ALLLO============');
   res.send(shitload);
 })
 
