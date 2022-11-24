@@ -15,17 +15,11 @@ app.get('/api/item/:slug', (req, res) => {
 
 app.post('/api', (req, res) => {
   // const { a, b, c } = JSON.parse(req.body);
-  const shitload = JSON.parse(req)
   // const data = {
   //   a: a,
   //   b: b, 
   //   c: c,
   // }
-  console.log('=============ALLLO===============');
-  console.log(req);
-  console.log(req.body);
-  console.log(res);
-  console.log('=============NE_ALLLO============');
   res.send('WHATAHELLDUHD');
 })
 
