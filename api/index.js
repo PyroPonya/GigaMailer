@@ -24,7 +24,7 @@ app.post('/api', (req, res) => {
   };
   const resp = JSON.stringify({
     data: data,
-    body: req
+    body: body,
   });
   // res.json({
   //   a: 'A-value',
