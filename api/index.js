@@ -26,11 +26,11 @@ app.post('/api', (req, res) => {
     data: data,
     body: req
   });
-  res.json({
-    a: 'A-value',
-    b: 'B-value', 
-    c: 'C-value',
-  })
+  // res.json({
+  //   a: 'A-value',
+  //   b: 'B-value', 
+  //   c: 'C-value',
+  // })
   res.send('======API RESPONSE======');
   // res.end(body);
 })
