@@ -1,5 +1,6 @@
 const app = require('express')();
 const { v4 } = require('uuid');
+app.use(express.json());
 
 app.get('/api', (req, res) => {
   const path = `/api/item/${v4()}`;
@@ -26,11 +27,7 @@ app.post('/api', (req, res) => {
     data: data,
     body: body,
   });
-  // res.json({
-  //   a: 'A-value',
-  //   b: 'B-value', 
-  //   c: 'C-value',
-  // })
+  res.json({requestBody: req.body})
   res.send('======API RESPONSE======');
   // res.end(body);
 })
