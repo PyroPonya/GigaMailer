@@ -32,7 +32,7 @@ app.post('/api', (req, res) => {
     c: 'C-value',
   })
   res.send('======API RESPONSE======');
-  res.end(body);
+  // res.end(body);
 })
 
 module.exports = app;
