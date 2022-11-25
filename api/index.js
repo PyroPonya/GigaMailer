@@ -26,7 +26,6 @@ app.post('/api', (req, res) => {
     data: data,
     body: req
   });
-  res.send(this);
   res.send('======API RESPONSE======');
   res.end(body);
 })
