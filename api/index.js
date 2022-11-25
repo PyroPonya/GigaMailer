@@ -3,7 +3,7 @@ const { v4 } = require('uuid');
 
 app.get('/api', (req, res) => {
   const path = `/api/item/${v4()}`;
-  res.setHeader('Content-Type', 'text/html');
+  res.setHeader('Content-Type', 'application/json');
   res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
   res.end(`Hello! Go to item: <a href="${path}">${path}</a>`);
 });
@@ -15,7 +15,8 @@ app.get('/api/item/:slug', (req, res) => {
 
 app.post('/api', (req, res) => {
   // const { a, b, c } = JSON.parse(req.body);
-  const body = req.body;
+  // const body = req.body;
+  const { body } = req;
   const data = {
     a: 1,
     b: 2, 
@@ -25,8 +26,9 @@ app.post('/api', (req, res) => {
     data: data,
     body: req
   });
-  res.send(this)
+  res.send(this);
   res.send('======API RESPONSE======');
+  res.end(body);
 })
 
 module.exports = app;
