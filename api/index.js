@@ -25,8 +25,8 @@ app.post('/api', (req, res) => {
     data: data,
     body: req
   });
-  
-  res.send(resp);
+  res.send(this)
+  res.send('======API RESPONSE======');
 })
 
 module.exports = app;
